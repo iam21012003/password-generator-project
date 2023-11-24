@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+      <title>tailwind css</title>
+
+</head>
+<body >
+    
+    <div class="flex h-screen items-center  justify-center bg-[#1b1b3a]">
+        <div class="text-white shadow h-2/4 w-96 text-center  border-2 border-white rounded">
+            <h1 class="text-3xl pt-4">Password Generator</h1>
+         <div class="items-center pt-3">
+            <input type="text" name="" id="generatedPassword" placeholder="click on Generate button" class="pr-28  px-1 py-0.5  text-base rounded-md text-black">
+         </div>
+        <div class="flex justify-center pt-5">
+            <button class="text-white bg-[#9881ff] mr-1.5 px-6 rounded-md  " id="generateBtn">Generate</button>
+            <button class=" text-white bg-[#9881ff]  px-1 rounded-md py-1" id="copyBtn">Copy To Clipboard</button>
+        </div>
+           
+        <div class="mt-8 ">
+            <div class="flex pl-12">
+               <p class="mr-20"> Password Length </p>
+                <input type="number" class="text-black w-24 rounded" id="passwordLength" >
+            </div>
+            <div class="flex pl-12 mt-1">
+                <p class="mr-20">Include uppercase letters</p>
+                 <input type="checkbox" name="" id="uppercase" class="ml-6"  >
+            </div>
+
+            <div class="flex pl-12 mt-1">
+                <p class="mr-20">Include Lowercase letters</p>
+                 <input type="checkbox" name="" id="lowercase" class="ml-6">
+            </div>
+
+            <div class="flex pl-12 mt-1">
+                <p class="mr-20">Include numbers</p>
+                 <input type="checkbox" name="" id="numbers"  class="ml-[83px]">
+            </div>
+
+            <div class="flex pl-12 mt-1">
+                <p class="mr-20">Include symbols</p>
+                 <input type="checkbox" name="" id="symbols"  class="ml-[88px]">
+            </div>
+        </div>
+
+     
+
+        </div>
+ </div>
+
+     <script src="index.js"></script>
+</body>
+</html>
